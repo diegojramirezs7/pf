@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>GPS Tracker</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="images/icon.png">
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Diego Ramirez </a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>GPS tracking system for food delivery</h2>
+							<p>
+								This project consists of a food ordering and delivery system where users 
+								<br>can track the status of the order and see the live reduced location 
+								<br>of the delivery driver through their browser.
+							</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								<h3>Project Description</h3>
+								<p>
+									The goal of this project was to build a complete system that would implement a geolocation feature with the help of a Data Stream Management System (DSMS). This feature was to be implemented while preserving the privacy of users by allowing them to choose how much data to share. Our main problem was figuring out how to limit the amount of geolocation data that this kind of systems collect from their users, which can result in privacy concerns. 
+								</p>
+
+								<p>
+									Given these requirements, our team decided to build a food ordering and delivery system in which users can track the reduced location of the delivery driver. This reduced location would be updated every few seconds rather than instantly and it'd only show  a wider area rather than the exact location. The exact location would only be shared when the driver explicitly allows it. The full system consisted of a server implemented with PHP, a MySQL database, the DSMS, and a UI written in React for delivery drivers, customers and the restaurant. The location data was obtained from the browser location API and was displayed using the OpenStreetMap API.
+								</p>
+								<p>
+									This system was similar to SkipTheDishes or Uber Eats, with the key difference of the reduced location feature. This feature seeked to aliviate the growing concerns of how much data is collected from users, specially geolocation data. 
+									By making all data go through the DSMS first and by setting different queries on the DSMS which filter the data sent to the server, we managed to limit the data collected from users. 
+								</p>
+								<div class="col-12">
+									<span class="image fit">
+										<img src="images/tracker.png" alt="" />
+									</span>
+								</div>
+								
+
+								<hr />
+
+								<h3>Development</h3>
+								<section>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Programming Languages Used</th>
+													<th>Technologies Used</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>PHP</td>
+													<td>MySQL</td>
+												</tr>
+												<tr>
+													<td>Javascript (React.js) </td>
+													<td>Apache</td>
+												</tr>
+												<tr>
+													<td>SQL </td>
+													<td>Odysseus (Data Stream Management System)</td>
+												</tr>
+												<tr>
+													<td>HTML/CSS</td>
+													<td>Slack/Github</td>
+												</tr>
+												<tr>
+													<td>Stream SQL </td>
+													<td>OpenStreetMap API</td>
+												</tr>
+												
+											</tbody>
+										</table>
+									</div>
+									<h5>Development Process</h5>
+									<p>
+										Our team consisted of 7 people working in an agile environment. Sub-groups were created to focus on particular parts of the system such as UI, DSMS and server. However, every person contributed to every part of the program. My worked focused on the implementation of the server, which was the central component of the system. I was responsible for writing the PHP methods that would take HTTP requests from the UIs and the DSMS and responded with the appropriate data, querying the MySQL database if needed. 
+									</p>
+									<p style="font-weight: 700">
+										Unfortunately, the source code for this project was not allowed to be made public due to university policies. 
+									</p>
+								</section>
+							</div>
+
+							
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="">
+							<li class="icon solid fa-phone"> +1(236)313-1302</li>
+							<li> 
+								<a href="mailto:diegojramirezs7@gmail.com" class="icon solid fa-envelope">
+									diegojramirezs7@gmail.com
+								</a>
+							</li>
+						</ul>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

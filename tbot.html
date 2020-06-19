@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Twitter Bot</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="images/icon.png">
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Diego Ramirez </a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Twitter Bot</h2>
+							<p>
+								Python-based Twitter bot that is scheduled to tweets/retweet content <br>
+								obtained from different websites and APIs at constant periods of time.  
+							</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								<h3>Project Description</h3>
+								<p>
+									After discovering the power of APIs in another one of my projects, I decided to build this program that would get content from a variety of sources and tweet things I think are interesting. That way, my Twitter feed would have better content every once in a while. 
+									By building this program I would improve my skills in different areas, because there were several problems I had to solve.
+									<ul class="alt">
+										<li>Scraping tweetable content from a set of websites.</li>
+										<li>
+											Do some web crawling by finding links on seed websites and then scraping the content from the websites that belonged to those links.  
+										</li>
+										<li>
+											Get and process content from different APIs.
+										</li>
+										<li> 
+											Using the Twitter API to tweet and retweet about a set of predefined topics.
+										</li>
+										<li>
+											Programatically downloading, processing and uploading images.
+										</li>
+										<li>
+											Containerizing the program with Docker to able to run it anywhere. 
+										</li>
+										<li>
+											Uploading the containerized program to AWS.
+										</li>
+
+									</ul>
+								</p>
+
+								<p>
+									I chose 6 topics that were interesting to me: poetry, comedy, sports, science, technology, and art. To make the tweets/retweets unpredictable, each topic has a list sub-topics and the script randomly selects one of them. There's also a list of content sources for each topic, and the content source for each tweet is also randomly selected. As a final factor for unpredictability, the script can tweet original content with a probability of 50%, tweet news about the selected sub-topic with a probability of 30% or retweet a randomly selected tweet related to a sub-topic with a probability of 20%. 
+								</p>
+								<p>
+									The program is containerized using Docker and the Docker container runs on an AWS EC2 instance. The whole program is written on Python, but several libraries are used. 
+								</p>
+								<div class="col-12">
+									<span class="image fit">
+										<img src="images/tbot.png" alt="" />
+									</span>
+								</div>
+								<div class="md-col-6">
+									<span class="image fit" style="max-width: 49.7%; display: inline-block;">
+										<img src="images/tbot2.png" alt=""  />
+									</span>
+									<span class="image fit" style="max-width: 49.7%; display: inline-block;">
+										<img src="images/tbot3.png" alt="" />
+									</span>
+								</div>
+								<div class="md-col-6">
+									
+								</div>
+
+								<hr />
+
+								<h3>Development</h3>
+								<section>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Programming Language/Libraries</th>
+													<th>Tools and other Software Used</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Python</td>
+													<td>Docker</td>
+												</tr>
+												<tr>
+													<td>BeautifulSoup (Web Scraping / Web Crawling)</td>
+													<td>Amazon Web Services (EC2)</td> 
+												</tr>
+												<tr>
+													<td>Tweepy (Python Wrapper for Twitter API)</td>
+													<td>Twitter API</td>
+												</tr>
+												<tr>
+													<td>Pillow (Image processing) </td>
+													<td>Github</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<h5>Development Process</h5>
+									<p>
+										I developed this project on my own to develop a deeper understanding of REST APIs, web scraping, Docker containerization, and Python overall. I thought it would be cool to build something where I can find some random interesting content that I selected. 
+									</p>
+									<p style="font-weight: 700">
+										See the full project source code on my 
+										<a href="https://github.com/diegojramirezs7/twitter-bot" 
+											target="_blank">
+											Github Repo.
+										</a>
+									</p>
+									<p style="font-weight: 700">
+										Twitter account of the bot: 
+										<a href="https://twitter.com/SmartContent14" 
+											target="_blank">
+											SmartContent14
+										</a>
+									</p>
+								</section>
+							</div>
+
+							
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="">
+							<li class="icon solid fa-phone"> +1(236)313-1302</li>
+							<li> 
+								<a href="mailto:diegojramirezs7@gmail.com" class="icon solid fa-envelope">
+									diegojramirezs7@gmail.com
+								</a>
+							</li>
+						</ul>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

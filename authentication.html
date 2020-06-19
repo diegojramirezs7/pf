@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Voice Authentication</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="images/icon.png">
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Diego Ramirez </a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Voice Recognition and Authentication System</h2>
+							<p>
+								User authentication system implemented with voice identification and 
+								<br> verification techniques to replace the traditional username/password process. 
+							</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								<h3>Project Description</h3>
+								<p>
+									As part of a final project, we met with a client who wanted to have a completely hands-free authentication process for his company. So, the goal of this project was to build a complete system that would allow employees or guests to be authenticated by only using their voice. The main features to be implemented were: 
+									<ul class="alt">
+										<li>Speech recognition (speech-to-text conversion)</li>
+										<li>
+											Allow the user to say different commands (Register, Verify Me, etc)
+										</li>
+										<li>Authenticating users by their voice </li>
+										<li>
+											Providing a confidence rating for the authentication process 
+										</li>
+										<li>
+											Providing audio feedback of results (text-to-speech conversion).
+										</li>
+									</ul>
+								</p>
+
+								<p>
+									After doing extensive research, we found 3 APIs that could be perfectly integrated into our system to meet all the former requirements. For text-to-speech and speech-to-text conversion we used Google's Voice API, and for the authentication process we combined 2 APIs for extra security (Azure Cognitive Services and VoiceIt). We implemented a server that integrates all the APIs, handles requests from the client on the Raspberry Pi and the web UI, and connects to the MySQL database to retrieve and save user data. Additionally, a web interface was included for easier user management (creating, retrieving, updating, deleting users). Both the script on the RPi and the server were written in Python. Python was chosen due to the extensive set of libraries that allowed us to implement the features more easily. 
+								</p>
+								<p>
+									Upon integration of all the components, we successfully implemented a system that satisfied all of the mentioned requirements, and some other implicit ones. After a lot of testing, we managed to create a smooth user experience in which users can register, get authenticated and give voice commands to the system while the system talks back to the through a speaker. User authentications consistently returned a confidence rating above 85%. Both our professor and our client were extremely satisfied and we got an "A as a grade".
+								</p>
+								<div class="col-12">
+									<span class="image fit">
+										<img src="images/voice_architecture.png" alt="" />
+									</span>
+								</div>
+								<div class="md-col-6">
+									<span class="image fit" style="max-width: 49.7%; display: inline-block;">
+										<img src="images/voiceUI.png" alt=""  />
+									</span>
+									<span class="image fit" style="max-width: 49.7%; display: inline-block;">
+										<img src="images/voiceUI2.png" alt="" />
+									</span>
+								</div>
+								<div class="md-col-6">
+									
+								</div>
+
+								<hr />
+
+								<h3>Development</h3>
+								<section>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Programming Languages Used</th>
+													<th>Tools and other Software Used</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Python (Flask)</td>
+													<td>Github</td>
+												</tr>
+												<tr>
+													<td>Javascript (Jquery) </td>
+													<td>Apache</td>
+												</tr>
+												<tr>
+													<td>SQL (MySQL) </td>
+													<td>APIs: VoiceIt, Azure CS, Google Voice</td>
+												</tr>
+												<tr>
+													<td>HTML/CSS</td>
+													<td>Raspberry Pi</td>
+												</tr>
+									
+												
+											</tbody>
+										</table>
+									</div>
+									<h5>Development Process</h5>
+									<p>
+										Our team consisted of 3 people working in an agile environment. 
+										We held weekly meetings with our client and professor to report progress, answer questions, to get feedback on our progress and for occasional updates on requirements. I was personally in charge of writing the Python code on the server that was the central part of the system and the code for the web UI. For code validation we used peer code reviews and extensive testing both on our own and with the client. 
+									</p>
+									<p style="font-weight: 700">
+										See the full project source code on my 
+										<a href="https://github.com/diegojramirezs7/finalproject" 
+											target="_blank">
+											Github Repo.
+										</a>
+									</p>
+								</section>
+							</div>
+
+							
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="">
+							<li class="icon solid fa-phone"> +1(236)313-1302</li>
+							<li> 
+								<a href="mailto:diegojramirezs7@gmail.com" class="icon solid fa-envelope">
+									diegojramirezs7@gmail.com
+								</a>
+							</li>
+						</ul>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
