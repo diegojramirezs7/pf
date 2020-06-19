@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>System for Rodent Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="images/icon.png">
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Diego Ramirez </a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Internet of Things System for Rodent Analysis</h2>
+							<p>
+								System consiting of different sensors and camera that collects <br>
+								the appropriate information when a rodent is detected.
+							</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								<h3>Project Description</h3>
+								<p>	
+								The goal of this project was to improve the current method researchers use to study rodent populations by automating the data gathering process. We partnered with a researcher who expressed concern on how tedious and labour intensive the current method is. The current method consists of researchers using live bait traps to capture speciments and then going to check the trap every hour to gather data from the rodent. So, he asked if we could design a system that would automate the data gathering process. That way, the system could be left on its own for hours or days and all the data collected would be saved and ready to be analyzed later. To make the system truly functional for researchers, we had to meet the following requirements: 
+
+									<ul class="alt">
+										<li>Collect the weight of rodents.</li>
+										<li>
+											Take pictures of the speciments.
+										</li>
+										<li>Get the length of rodents. </li>
+										<li>
+											Record the temperature and humidity of the environment throughout the day.
+										</li>
+										<li>
+											Have the system be able to run on battery power.
+										</li>
+										<li>
+											Save the data in an easy-to-analyze way. 
+										</li>
+									</ul>
+								</p>
+
+								<p>
+									Considering these requirements, we developed a system that could collect all the mentioned data by using dedicated sensors that take the measurements and feed them to an Arduino or a Raspberry Pi. The data for each rodent would be saved on an independent CSV file, in a folder with all the pictures taken from the specimen. The Average of all weight, temperature and humidity recorded values would be calculated automatically. 
+									To attract rodents to the system, also a food bait trap is used. To detect when a rodent is in the system, we use the weight sensor which constantly records weight detected. When a threshold is met, all the other sensors and the camera are triggered. 
+								</p>
+								<p>
+									
+								</p>
+								<div class="col-12">
+									<span class="image fit">
+										<img src="images/iot.png" alt="" />
+									</span>
+								</div>
+								<div class="md-col-6">
+									<span class="image fit" style="max-width: 49.7%; display: inline-block;">
+										<img src="images/fullhousing.jpg" alt=""  />
+									</span>
+									<span class="image fit" style="max-width: 49.7%; display: inline-block;">
+										<img src="images/housing.png" alt="" />
+									</span>
+								</div>
+								<div class="md-col-6">
+									
+								</div>
+
+								<hr />
+
+								<h3>Development</h3>
+								<section>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Programming Languages and Tools</th>
+													<th>Hardware</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Python </td>
+													<td>Raspberry Pi 3</td>
+												</tr>
+												<tr>
+													<td>LUA </td>
+													<td>NodeMCU (Arduino environment)</td>
+												</tr>
+												<tr>
+													<td>Git/Github </td>
+													<td>sensors: temperature, humdity, light intensity, weight</td>
+												</tr>
+												<tr>
+													<td>Linux (Raspbian)</td>
+													<td>Sony Camera Module for Raspberry Pi</td>
+												</tr>
+									
+												
+											</tbody>
+										</table>
+									</div>
+									<h5>Development Process</h5>
+									<p>
+										Our team consisted of 3 people working in an agile environment. 
+										We held weekly meetings with our client and professor to report progress, answer questions, to get feedback on our progress and for occasional updates on requirements. I was personally in charge of writing the Python code on the server that was the central part of the system and the code for the web UI. For code validation we used peer code reviews and extensive testing both on our own and with the client. 
+									</p>
+									<p style="font-weight: 700">
+										See the full project source code on my 
+										<a href="https://github.com/diegojramirezs7/iot" 
+											target="_blank">
+											Github Repo.
+										</a>
+									</p>
+								</section>
+							</div>
+
+							
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="">
+							<li class="icon solid fa-phone"> +1(236)313-1302</li>
+							<li> 
+								<a href="mailto:diegojramirezs7@gmail.com" class="icon solid fa-envelope">
+									diegojramirezs7@gmail.com
+								</a>
+							</li>
+						</ul>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
