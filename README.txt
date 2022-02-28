@@ -3,8 +3,6 @@ html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-- It's built with components from my Responsive Tools project.
-
 - It uses flexbox, which eliminates all kinds of terrible hacks and clunky layout
   stopgaps (like CSS grid systems).
 
