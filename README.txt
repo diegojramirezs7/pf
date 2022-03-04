@@ -11,7 +11,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
   (* = still entirely optional if you prefer vanilla CSS :)
 
-- A ton of other stuff.
+- A ton of other stuf
 
 In short, Spectral's the culmination of several new things I'm working on/trying out,
 so please, let me know what you think :)
